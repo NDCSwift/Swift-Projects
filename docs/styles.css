@@ -1,0 +1,74 @@
+/* 🎨 Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+/* 🏠 Header Styling */
+header {
+    background-color: #FA7343;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 📍 Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #7353BA;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #29ABE2;
+}
+
+/* 📄 Page Content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🔽 Download Buttons */
+.download-btn {
+    display: block;
+    background-color: #29ABE2;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px auto;
+    width: 80%;
+    transition: background 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: #FA7343;
+}
+
+/* 🔹 Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ECECEC;
+    color: #333;
+    font-size: 14px;
+}
