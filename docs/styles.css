@@ -130,10 +130,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-.download-btn::before {
-    content: "📥";
-    margin-right: 10px;
-}
+
 
 /* 🎮 Hero Section */
 .hero {
