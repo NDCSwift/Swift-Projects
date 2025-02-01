@@ -17,25 +17,7 @@
         <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
     </nav>
 
-    <input type="text" id="search" placeholder="🔍 Search for a file..." onkeyup="filterFiles()">
-
-<ul id="file-list">
-    <li><a href="ArraysPlayground.playground.zip">📥 Arrays Playground</a></li>
-    <li><a href="LoopsPlayground.playground.zip">📥 Loops Playground</a></li>
-    <li><a href="SiS - TypeCasting.playground.zip">📥 SiS - Type Casting</a></li>
-</ul>
-
-<script>
-function filterFiles() {
-    let input = document.getElementById("search").value.toLowerCase();
-    let files = document.querySelectorAll("#file-list li");
     
-    files.forEach(file => {
-        let text = file.textContent.toLowerCase();
-        file.style.display = text.includes(input) ? "" : "none";
-    });
-}
-</script>
 
     <div class="container">
         <h1>📂 Swift Playgrounds</h1>
