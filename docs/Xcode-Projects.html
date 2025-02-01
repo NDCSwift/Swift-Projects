@@ -15,24 +15,42 @@
         <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
         <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
         <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        , <a href="https://www.youtube.com/@NoahDoesCoding97">🎥 My YouTube</a>
+        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
     </nav>
 
     <div class="container">
         <h1>📂 Xcode Projects</h1>
         <p>Click below to download the project files:</p>
 
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/DocumentationHelper.swiftpm.zip" class="download-btn" download>
-            📥  Documentation Helper (.swiftpm)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/XcodeTips.swiftpm.zip" class="download-btn" download>
-            📥  Xcode Tips (.swiftpm)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/LaunchScreenExample.zip" class="download-btn" download>
-            📥  Launch Screen Example (.zip)
-        </a>
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+
+        <div id="file-list">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/DocumentationHelper.swiftpm.zip" class="download-btn" download>
+                📥 Documentation Helper (.swiftpm)
+            </a>
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/XcodeTips.swiftpm.zip" class="download-btn" download>
+                📥 Xcode Tips (.swiftpm)
+            </a>
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/LaunchScreenExample.zip" class="download-btn" download>
+                📥 Launch Screen Example (.zip)
+            </a>
+        </div>
     </div>
 
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
+
+    <!-- 🔍 Search Script -->
+    <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list a");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
 </body>
 </html>

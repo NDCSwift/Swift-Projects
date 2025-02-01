@@ -21,6 +21,9 @@
     <div class="container">
         <h1>📂 Developer Tutorials</h1>
         <p>Click below to download the tutorial project files:</p>
+         <!-- 🔍 Search Bar -->
+         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+
 
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Birthdays.zip" class="download-btn" download>
             📥 Birthdays (.zip)
@@ -43,5 +46,17 @@
     </div>
 
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
+      <!-- 🔍 Search Script -->
+      <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list a");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
 </body>
 </html>

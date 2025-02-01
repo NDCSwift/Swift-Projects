@@ -21,6 +21,8 @@
     <div class="container">
         <h1>📂 SwiftUI Projects</h1>
         <p>Click below to download the SwiftUI project files:</p>
+<!-- 🔍 Search Bar -->
+<input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
 
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/APIExampleOpen-Meteo.zip" class="download-btn" download>
             📥 API Example Open-Meteo (.zip)
@@ -135,6 +137,31 @@
         </a>
     </div>
 
+      <!-- 🔍 Search Script -->
+      <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list a");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
+
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
+     <!-- 🔍 Search Script -->
+     <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list a");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
 </body>
 </html>
