@@ -73,38 +73,9 @@ nav a:hover {
     font-style: italic;
 }
 
-/* 📜 Table of Contents */
-.toc {
-    text-align: left;
-    background: #ECECEC;
-    padding: 15px;
-    border-radius: 8px;
+/* 📂 Project Section */
+.project {
     margin-bottom: 20px;
-}
-
-.toc h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #7353BA;
-}
-
-.toc ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.toc ul li {
-    margin: 5px 0;
-}
-
-.toc a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #29ABE2;
-}
-
-.toc a:hover {
-    text-decoration: underline;
 }
 
 /* 🔽 Download Buttons */
@@ -130,42 +101,38 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-
-
-/* 🎮 Hero Section */
-.hero {
-    background: linear-gradient(to right, #FA7343, #29ABE2);
+/* 📺 Toggle Video Button */
+.toggle-video {
+    display: block;
+    background-color: #7353BA;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 30px;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.cta-btn {
-    background-color: white;
-    color: #FA7343;
-    padding: 12px 20px;
-    text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
     border-radius: 5px;
+    text-decoration: none;
+    margin: 5px auto;
+    width: 80%;
+    cursor: pointer;
+    border: none;
     transition: background 0.3s ease-in-out;
-    display: inline-block;
-    margin: 5px;
 }
 
-.cta-btn:hover {
-    background-color: #ECECEC;
+.toggle-video:hover {
+    background-color: #29ABE2;
+}
+
+/* 🎥 Video Section */
+.video-container {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
 }
 
 /* 🔹 Footer */
@@ -185,17 +152,12 @@ footer {
         text-align: center;
     }
 
-    .download-btn {
+    .download-btn, .toggle-video {
         width: 100%;
         font-size: 14px;
     }
 
-    .hero h1 {
-        font-size: 22px;
-    }
-
-    .cta-btn {
-        font-size: 14px;
-        padding: 10px;
+    .video-container iframe {
+        height: 250px;
     }
 }

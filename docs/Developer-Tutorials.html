@@ -15,48 +15,107 @@
         <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
         <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
         <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        , <a href="https://www.youtube.com/@NoahDoesCoding97">🎥 My YouTube</a>
+        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
     </nav>
 
     <div class="container">
         <h1>📂 Developer Tutorials</h1>
         <p>Click below to download the tutorial project files:</p>
-         <!-- 🔍 Search Bar -->
-         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
 
-         <div id="file-list">
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Birthdays.zip" class="download-btn" download>
-            📥 Birthdays (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ChatPrototype.zip" class="download-btn" download>
-            📥 Chat Prototype (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/DiceRollerExample.zip" class="download-btn" download>
-            📥 Dice Roller Example (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/OnboardingFlow.zip" class="download-btn" download>
-            📥 Onboarding Flow (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Pick-a-pal.zip" class="download-btn" download>
-            📥 Pick-a-Pal (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/WeatherForecast.zip" class="download-btn" download>
-            📥 Weather Forecast (.zip)
-        </a>
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+
+        <div id="file-list">
+            <!-- 🔽 Developer Projects with Expandable Videos -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Birthdays.zip" class="download-btn" download>
+                    📥 Birthdays (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
+                <div id="birthdays-video" class="video-container">
+                    <iframe src="https://youtu.be/yyE4Vlc4tpQ?list=PLbeGXTt3IOd__fVP9U2n5W3vkCZn3p14v" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/WeatherForecast.zip" class="download-btn" download>
+                    📥 Weather Forecast (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
+                <div id="birthdays-video" class="video-container">
+                    <iframe src="https://youtu.be/_utOlpGlhes?list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&t=1070" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/OnboardingFlow.zip" class="download-btn" download>
+                    📥 Onboarding Flow (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
+                <div id="birthdays-video" class="video-container">
+                    <iframe src="https://youtu.be/XV423QnB4dQ?list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ScoreKeeper2.zip" class="download-btn" download>
+                    📥 ScoreKeeper (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
+                <div id="birthdays-video" class="video-container">
+                    <iframe src="https://youtu.be/E_vqv2JknW0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ChatPrototype.zip" class="download-btn" download>
+                    📥 Chat Prototype (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('chat-video')">📺 Watch Tutorial</button>
+                <div id="chat-video" class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=_utOlpGlhes&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Pick-a-pal.zip" class="download-btn" download>
+                    📥 Pick-A-Pal(.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('chat-video')">📺 Watch Tutorial</button>
+                <div id="chat-video" class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=StNH6RNxm90&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/DiceRollerExample.zip" class="download-btn" download>
+                    📥 Dice Roller Example (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('dice-video')">📺 Watch Tutorial</button>
+                <div id="dice-video" class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=IBol0DAqBGA&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=3" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
-      <!-- 🔍 Search Script -->
-      <script>
+
+    <!-- 🔍 Search Script -->
+    <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
-            let files = document.querySelectorAll("#file-list a");
+            let files = document.querySelectorAll("#file-list .project");
 
             files.forEach(file => {
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
+        }
+
+        function toggleVideo(videoId) {
+            let videoDiv = document.getElementById(videoId);
+            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>
