@@ -445,11 +445,19 @@
   <script>
     function filterFiles() {
         let input = document.getElementById("search").value.toLowerCase();
-        let files = document.querySelectorAll("#file-list .project");
+        let projects = document.querySelectorAll("#file-list .project"); // Projects with videos
+        let standaloneLinks = document.querySelectorAll("#file-list > a"); // Projects without videos
 
-        files.forEach(file => {
-            let text = file.textContent.toLowerCase();
-            file.style.display = text.includes(input) ? "block" : "none";
+        // Filter projects with videos
+        projects.forEach(project => {
+            let text = project.textContent.toLowerCase();
+            project.style.display = text.includes(input) ? "block" : "none";
+        });
+
+        // Filter standalone links (projects without videos)
+        standaloneLinks.forEach(link => {
+            let text = link.textContent.toLowerCase();
+            link.style.display = text.includes(input) ? "block" : "none";
         });
     }
 
