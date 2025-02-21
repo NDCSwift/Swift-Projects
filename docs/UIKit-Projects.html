@@ -15,59 +15,111 @@
         <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
         <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
         <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
+        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
     </nav>
 
     <div class="container">
         <h1>📂 UIKit Projects</h1>
         <p>Click below to download the UIKit project files:</p>
 
- <!-- 🔍 Search Bar -->
+        <!-- 🔍 Search Bar -->
         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+        
         <div id="file-list">
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/uiKitDemo.zip" class="download-btn" download>
-            📥 UIKit Demo (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/AutoLayoutExample.zip" class="download-btn" download>
-            📥 Auto Layout Example (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/AutoLayoutUIKitDemo.zip" class="download-btn" download>
-            📥 Auto Layout UIKit Demo (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/Collections.zip" class="download-btn" download>
-            📥 Collections (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/MapKitDemoUIKit.zip" class="download-btn" download>
-            📥 MapKit Demo UIKit (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NotificationsExample.zip" class="download-btn" download>
-            📥 Notifications Example (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/SegueExamples.zip" class="download-btn" download>
-            📥 Segue Examples (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NoteTakingApp.zip" class="download-btn" download>
-            📥 Note Taking App (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/TableViewCollectionViewDemo.zip" class="download-btn" download>
-            📥 Table View & Collection View Demo (.zip)
-        </a>
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/ViewControllerExamplesNoahC.zip" class="download-btn" download>
-            📥 View Controller Examples Noah C (.zip)
-        </a>
+            <!-- UIKit Demo -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/uiKitDemo.zip" class="download-btn" download>
+                    📥 UIKit Demo (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('uikit-demo-video')">📺 Watch Tutorial</button>
+                <div id="uikit-demo-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/CU04v-sUhhg" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Auto Layout Example -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/AutoLayoutExample.zip" class="download-btn" download>
+                    📥 Auto Layout Example (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('autolayout-video')">📺 Watch Tutorial</button>
+                <div id="autolayout-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/o_7H9773Iy8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Collections (No video tutorial available) -->
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/Collections.zip" class="download-btn" download>
+                📥 Collections (.zip)
+            </a>
+
+            <!-- MapKit Demo -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/MapKitDemoUIKit.zip" class="download-btn" download>
+                    📥 MapKit Demo UIKit (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('mapkit-video')">📺 Watch Tutorial</button>
+                <div id="mapkit-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/txsX27k8J6M" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Notifications Example (No video tutorial available) -->
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NotificationsExample.zip" class="download-btn" download>
+                📥 Notifications Example (.zip)
+            </a>
+
+            <!-- Segue Examples (No video tutorial available) -->
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/SegueExamples.zip" class="download-btn" download>
+                📥 Segue Examples (.zip)
+            </a>
+
+            <!-- Note Taking App -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NoteTakingApp.zip" class="download-btn" download>
+                    📥 Note Taking App (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('notetaking-video')">📺 Watch Tutorial</button>
+                <div id="notetaking-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/-K0Vk1-U4sA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Table View & Collection View Demo -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/TableViewCollectionViewDemo.zip" class="download-btn" download>
+                    📥 Table View & Collection View Demo (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('tableview-video')">📺 Watch Tutorial</button>
+                <div id="tableview-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/HQsSiBP-Z1g" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- View Controller Examples Noah C (No video tutorial available) -->
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/ViewControllerExamplesNoahC.zip" class="download-btn" download>
+                📥 View Controller Examples Noah C (.zip)
+            </a>
         </div>
     </div>
 
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
-     <!-- 🔍 Search Script -->
-     <script>
+
+    <!-- 🔍 Search & Video Toggle Script -->
+    <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
-            let files = document.querySelectorAll("#file-list a");
+            let files = document.querySelectorAll("#file-list .project, #file-list a");
 
             files.forEach(file => {
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
+        }
+
+        function toggleVideo(videoId) {
+            let videoDiv = document.getElementById(videoId);
+            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>

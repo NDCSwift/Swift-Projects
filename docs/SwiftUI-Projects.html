@@ -24,159 +24,409 @@
 <!-- 🔍 Search Bar -->
 <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
 <div id="file-list">
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/APIExampleOpen-Meteo.zip" class="download-btn" download>
-            📥 API Example Open-Meteo (.zip)
-        </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AppleIDExemplar.zip" class="download-btn" download>
-            📥 Apple ID Example (.zip)
-        </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AppStorageExample.zip" class="download-btn" download>
-            📥 App Storage Example (.zip)
-        </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AsyncImageExample.zip" class="download-btn" download>
-            📥 Async Image Example (.zip)
-        </a>
 
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AnimationExamples.zip" class="download-btn" download>
-            📥 AnimationExamples (.zip)
-        </a>
+        <!-- API Example Open-Meteo -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/APIExampleOpen-Meteo.zip" class="download-btn" download>
+                📥 API Example Open-Meteo (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('api-example-video')">📺 Watch Tutorial</button>
+            <div id="api-example-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/hvjqUuhmNZQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Apple ID Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AppleIDExemplar.zip" class="download-btn" download>
+                📥 Apple ID Example (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('appleid-video')">📺 Watch Tutorial</button>
+            <div id="appleid-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/ImhNHbqzoDE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- App Storage Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AppStorageExample.zip" class="download-btn" download>
+                📥 App Storage Example (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('appstorage-video')">📺 Watch Tutorial</button>
+            <div id="appstorage-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/ioKgvLOGuK8" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Async Image Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AsyncImageExample.zip" class="download-btn" download>
+                📥 Async Image Example (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('asyncimage-video')">📺 Watch Tutorial</button>
+            <div id="asyncimage-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/cFrMPUMRaJk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Animation Examples -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AnimationExamples.zip" class="download-btn" download>
+                📥 Animation Examples (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('animation-video')">📺 Watch Tutorial</button>
+            <div id="animation-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/jsaRlJyhoVg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- SwiftUI Library Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwitUIViewLibraryExample.zip" class="download-btn" download>
+                📥 SwiftUILibraryOnly Example (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('swiftuilib-video')">📺 Watch Tutorial</button>
+            <div id="swiftuilib-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/pHbUhDtK6Kk" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Camera Examples -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/CameraExamples.zip" class="download-btn" download>
+                📥 Camera Examples (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('camera-video')">📺 Watch Tutorial</button>
+            <div id="camera-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/hB8MTEJj3CA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Custom UI Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/CustomUIExampleSwiftUI.zip" class="download-btn" download>
+                📥 Custom UI Example SwiftUI (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('customui-video')">📺 Watch Tutorial</button>
+            <div id="customui-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/ERkemyBgNPQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Navigation Example with UI -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/navigationTabViewExampleWithUI.zip" class="download-btn" download>
+                📥 Navigation Example with UI (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('navui-video')">📺 Watch Tutorial</button>
+            <div id="navui-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/m8KvqS7VMZs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Navigation Example No UI -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/navigationTabViewExampleNoUI.zip" class="download-btn" download>
+                📥 Navigation Example No UI (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('navnoui-video')">📺 Watch Tutorial</button>
+            <div id="navnoui-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/m8KvqS7VMZs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Dark Mode Example -->
+        <div class="project">
+            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/DarkModeExample.zip" class="download-btn" download>
+                📥 Dark Mode Example (.zip)
+            </a>
+            <button class="toggle-video" onclick="toggleVideo('darkmode-video')">📺 Watch Tutorial</button>
+            <div id="darkmode-video" class="video-container">
+                <iframe src="https://www.youtube.com/embed/8zx7dG2kwJg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+   
 
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwitUIViewLibraryExample.zip" class="download-btn" download>
-            📥 SwiftUILibraryOnly Example(.zip)
-        </a>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/CameraExamples.zip" class="download-btn" download>
-            📥 Camera Examples (.zip)
-        </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/CustomUIExampleSwiftUI.zip" class="download-btn" download>
-            📥 Custom UI Example SwiftUI (.zip)
-        </a>
 
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/navigationTabViewExampleWithUI.zip" class="download-btn" download>
-            📥 Navigation Example with UI(.zip)
-        </a>
+            <!-- HabitBuddy -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/HabitBuddy.zip" class="download-btn" download>
+                    📥 HabitBuddy (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('habitbuddy-video')">📺 Watch Tutorial</button>
+                <div id="habitbuddy-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/uXgGzbnl35E" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/navigationTabViewExampleNoUI.zip" class="download-btn" download>
-            📥 Navigation Example no UI (.zip)
-        </a>
+            <!-- HealthKit Example -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/HealthKitExample.zip" class="download-btn" download>
+                    📥 HealthKit Example (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('healthkit-video')">📺 Watch Tutorial</button>
+                <div id="healthkit-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ORJ9rvqoR9s" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/DarkModeExample.zip" class="download-btn" download>
-            📥 Dark Mode Example (.zip)
-        </a>
-
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/HabitBuddy.zip" class="download-btn" download>
-            📥 HabitBuddy (.zip)
-        </a>
-
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/HealthKitExample.zip" class="download-btn" download>
-            📥 HealthKitExample (.zip)
-        </a>
+            <!-- Firebase Example Login -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FireBaseExampleLogin.zip" class="download-btn" download>
+                    📥 Firebase Example Login (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('firebase-login-video')">📺 Watch Tutorial</button>
+                <div id="firebase-login-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/CXnThxHN1PQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FireBaseExampleLogin.zip" class="download-btn" download>
-            📥 Firebase Example Login (.zip)
-        </a>
-
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FirebaseOTPExample2.zip" class="download-btn" download>
-            📥 Firebase OTP Login example (Phone login) !!ADD YOUR OWN GOOGLE SERVICES PLIST FROM FIREBASE 🔥!! (.zip)
-        </a>
+            <!-- Firebase OTP Login -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FirebaseOTPExample2.zip" class="download-btn" download>
+                    📥 Firebase OTP Login Example (Phone login) !!ADD YOUR OWN GOOGLE SERVICES PLIST FROM FIREBASE 🔥!! (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('firebase-otp-video')">📺 Watch Tutorial</button>
+                <div id="firebase-otp-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/yPtWZU5PxSg" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FormExampleSwiftui.zip" class="download-btn" download>
-            📥 Form Example SwiftUI (.zip)
-        </a>
+            <!-- Form Example SwiftUI -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/FormExampleSwiftui.zip" class="download-btn" download>
+                    📥 Form Example SwiftUI (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('form-video')">📺 Watch Tutorial</button>
+                <div id="form-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Ugm572owtqM" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/GesturesExample.zip" class="download-btn" download>
-            📥 Gestures Example (.zip)
-        </a>
+            <!-- Gestures Example -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/GesturesExample.zip" class="download-btn" download>
+                    📥 Gestures Example (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('gestures-video')">📺 Watch Tutorial</button>
+                <div id="gestures-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/d0W7fzWwncE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+           <!-- Charts Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/ChartKitExample.zip" class="download-btn" download>
             📥 Charts Example (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('charts-video')">📺 Watch Tutorial</button>
+        <div id="charts-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/nz9SOol9czw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- JSON Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/JsonExample.zip" class="download-btn" download>
             📥 JSON Example (.zip)
         </a>
+        <button class="toggle-video" onclick="toggleVideo('json-video')">📺 Watch Tutorial</button>
+        <div id="json-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/WZpKDS9PiA0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- Audio Analyzer (AVFoundation) -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/AudioAnalyzer.zip" class="download-btn" download>
-            📥  AudioAnalyzer (AVFoundation) (.zip)
+            📥 Audio Analyzer (AVFoundation) (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('audioanalyzer-video')">📺 Watch Tutorial</button>
+        <div id="audioanalyzer-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/x5via6aU1sc" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Lists Example SwiftUI -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/ListsExampleSwiftUI.zip" class="download-btn" download>
             📥 Lists Example SwiftUI (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('lists-video')">📺 Watch Tutorial</button>
+        <div id="lists-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/2jFq5DasLsk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Localized Demo -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/LocalizedDemo.zip" class="download-btn" download>
             📥 Localized Demo (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('localized-video')">📺 Watch Tutorial</button>
+        <div id="localized-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/5BA94Lo81jU" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Login Example 123 -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/LoginExample123.swiftpm.zip" class="download-btn" download>
             📥 Login Example 123 (.swiftpm.zip)
         </a>
+        <button class="toggle-video" onclick="toggleVideo('login-example-video')">📺 Watch Tutorial</button>
+        <div id="login-example-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/ImhNHbqzoDE" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
         
+     <!-- MapKit SwiftUI Example -->
+     <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/MapKitSwiftuiExample.zip" class="download-btn" download>
             📥 MapKit SwiftUI Example (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('mapkit-video')">📺 Watch Tutorial</button>
+        <div id="mapkit-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/h5yLPYU6W8A" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Notification Example SwiftUI -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/NotificationExampleSwiftUI.zip" class="download-btn" download>
             📥 Notification Example SwiftUI (.zip)
         </a>
+        <button class="toggle-video" onclick="toggleVideo('notification-video')">📺 Watch Tutorial</button>
+        <div id="notification-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/yTtB5eKrahM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Sound Effects SwiftUI -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SoundEffectsExample.zip" class="download-btn" download>
             📥 Sound Effects SwiftUI (.zip)
         </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/PearlButtonExample.zip" class="download-btn" download>
-            📥 Pearl Button Example (.zip)
-        </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('soundeffects-video')">📺 Watch Tutorial</button>
+        <div id="soundeffects-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/qjugxzYfkHQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <!-- Popover Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/PopoverExample.zip" class="download-btn" download>
             📥 Popover Example (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('popover-video')">📺 Watch Tutorial</button>
+        <div id="popover-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/Tf_t9oMGQQo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Profile Card Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/ProfileCardExample.swiftpm.zip" class="download-btn" download>
             📥 Profile Card Example (.swiftpm.zip)
         </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/PropertyWrappers.swiftpm.zip" class="download-btn" download>
-            📥 Property Wrappers (.swiftpm.zip)
-        </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('profilecard-video')">📺 Watch Tutorial</button>
+        <div id="profilecard-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/wZKqsg0dgro" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Search Function Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SearchFunctionExample.zip" class="download-btn" download>
             📥 Search Function Example (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('search-video')">📺 Watch Tutorial</button>
+        <div id="search-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/1qbCuRtUx1Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Sensor Example -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SensorExample.zip" class="download-btn" download>
             📥 Sensor Example (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('sensor-video')">📺 Watch Tutorial</button>
+        <div id="sensor-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/YS4K_GT2_vM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+      <!-- SwiftUI Counter -->
+      <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUICounter.zip" class="download-btn" download>
             📥 SwiftUI Counter (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('swiftui-counter-video')">📺 Watch Tutorial</button>
+        <div id="swiftui-counter-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/Y6thUlvWVpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- SwiftUI Demo -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUIDemo.zip" class="download-btn" download>
             📥 SwiftUI Demo (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('swiftui-demo-video')">📺 Watch Tutorial</button>
+        <div id="swiftui-demo-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/qJa2A1g1h9w" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- SwiftUI Lists & Navigation -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUIListsNavigation.zip" class="download-btn" download>
             📥 SwiftUI Lists & Navigation (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('swiftui-lists-video')">📺 Watch Tutorial</button>
+        <div id="swiftui-lists-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/1hI28jtABG4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- SwiftUI Stacks -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUIStacks.zip" class="download-btn" download>
             📥 SwiftUI Stacks (.zip)
         </a>
-        
+        <button class="toggle-video" onclick="toggleVideo('swiftui-stacks-video')">📺 Watch Tutorial</button>
+        <div id="swiftui-stacks-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/wZKqsg0dgro" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- SwiftUI Tab Bar -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUITabBar.zip" class="download-btn" download>
             📥 SwiftUI Tab Bar (.zip)
         </a>
+        <button class="toggle-video" onclick="toggleVideo('swiftui-tabbar-video')">📺 Watch Tutorial</button>
+        <div id="swiftui-tabbar-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/1hI28jtABG4?start=880" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    <!-- HabitFriend -->
+    <div class="project">
         <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/HabitFriend.zip" class="download-btn" download>
             📥 HabitFriend (.zip)
         </a>
-        
-        <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/SwiftUI-Projects/SwiftUITaskAppExample.zip" class="download-btn" download>
-            📥 SwiftUI Task App Example (.zip)
-        </a>
+        <button class="toggle-video" onclick="toggleVideo('habitfriend-video')">📺 Watch Tutorial</button>
+        <div id="habitfriend-video" class="video-container">
+            <iframe src="https://www.youtube.com/embed/uXgGzbnl35E?si=nnkc6BEnB8GFlubZ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+   
+
+
         </div>
     </div>
 
@@ -184,14 +434,19 @@
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
      <!-- 🔍 Search Script -->
      <script>
-        function filterFiles() {
-            let input = document.getElementById("search").value.toLowerCase();
-            let files = document.querySelectorAll("#file-list a");
+     function filterFiles() {
+    let input = document.getElementById("search").value.toLowerCase();
+    let projects = document.querySelectorAll("#file-list .project");
 
-            files.forEach(file => {
-                let text = file.textContent.toLowerCase();
-                file.style.display = text.includes(input) ? "" : "none";
-            });
+    projects.forEach(project => {
+        let text = project.textContent.toLowerCase();
+        project.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+
+        function toggleVideo(videoId) {
+            let videoDiv = document.getElementById(videoId);
+            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>
