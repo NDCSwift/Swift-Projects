@@ -33,7 +33,7 @@
                 </a>
                 <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
                 <div id="birthdays-video" class="video-container">
-                    <iframe src="https://youtu.be/yyE4Vlc4tpQ?list=PLbeGXTt3IOd__fVP9U2n5W3vkCZn3p14v" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/yyE4Vlc4tpQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -41,9 +41,9 @@
                 <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/WeatherForecast.zip" class="download-btn" download>
                     📥 Weather Forecast (.zip)
                 </a>
-                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
-                <div id="birthdays-video" class="video-container">
-                    <iframe src="https://youtu.be/_utOlpGlhes?list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&t=1070" frameborder="0" allowfullscreen></iframe>
+                <button class="toggle-video" onclick="toggleVideo('weather-video')">📺 Watch Tutorial</button>
+                <div id="weather-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/_utOlpGlhes" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -51,9 +51,9 @@
                 <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/OnboardingFlow.zip" class="download-btn" download>
                     📥 Onboarding Flow (.zip)
                 </a>
-                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
-                <div id="birthdays-video" class="video-container">
-                    <iframe src="https://youtu.be/XV423QnB4dQ?list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D" frameborder="0" allowfullscreen></iframe>
+                <button class="toggle-video" onclick="toggleVideo('onboarding-video')">📺 Watch Tutorial</button>
+                <div id="onboarding-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/XV423QnB4dQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -61,9 +61,9 @@
                 <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ScoreKeeper2.zip" class="download-btn" download>
                     📥 ScoreKeeper (.zip)
                 </a>
-                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
-                <div id="birthdays-video" class="video-container">
-                    <iframe src="https://youtu.be/E_vqv2JknW0" frameborder="0" allowfullscreen></iframe>
+                <button class="toggle-video" onclick="toggleVideo('scorekeeper-video')">📺 Watch Tutorial</button>
+                <div id="scorekeeper-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/E_vqv2JknW0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -73,17 +73,17 @@
                 </a>
                 <button class="toggle-video" onclick="toggleVideo('chat-video')">📺 Watch Tutorial</button>
                 <div id="chat-video" class="video-container">
-                    <iframe src="https://www.youtube.com/watch?v=_utOlpGlhes&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/_utOlpGlhes" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="project">
                 <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Pick-a-pal.zip" class="download-btn" download>
-                    📥 Pick-A-Pal(.zip)
+                    📥 Pick-A-Pal (.zip)
                 </a>
-                <button class="toggle-video" onclick="toggleVideo('chat-video')">📺 Watch Tutorial</button>
-                <div id="chat-video" class="video-container">
-                    <iframe src="https://www.youtube.com/watch?v=StNH6RNxm90&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=4" frameborder="0" allowfullscreen></iframe>
+                <button class="toggle-video" onclick="toggleVideo('pickapal-video')">📺 Watch Tutorial</button>
+                <div id="pickapal-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/StNH6RNxm90" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
                 </a>
                 <button class="toggle-video" onclick="toggleVideo('dice-video')">📺 Watch Tutorial</button>
                 <div id="dice-video" class="video-container">
-                    <iframe src="https://www.youtube.com/watch?v=IBol0DAqBGA&list=PLbeGXTt3IOd_ofjQ5wBo-rsvX7KisFE5D&index=3" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/IBol0DAqBGA" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
 
     <footer>Created by NDCSwift | Swift Enthusiast</footer>
 
-    <!-- 🔍 Search Script -->
+    <!-- 🔍 Search & Video Toggle Script -->
     <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
@@ -115,7 +115,11 @@
 
         function toggleVideo(videoId) {
             let videoDiv = document.getElementById(videoId);
-            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
+            if (videoDiv.style.display === "none" || videoDiv.style.display === "") {
+                videoDiv.style.display = "block";
+            } else {
+                videoDiv.style.display = "none";
+            }
         }
     </script>
 </body>
