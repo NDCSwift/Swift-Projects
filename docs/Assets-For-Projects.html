@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Assets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>📦 Project Assets</header>
+
+    <nav>
+        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
+        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
+        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
+        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
+        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
+        <a href="Assets-For-Projects.html">📦 Project Assets</a>
+        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
+    </nav>
+
+    <div class="container">
+        <h1>📦 Project Assets</h1>
+        <p>These are **not full projects**, but supporting assets for those who want to follow along with my tutorials 1:1. 
+        Download these files to use the same images, sounds, and resources featured in my videos.</p>
+
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="search" placeholder="🔍 Search for an asset..." onkeyup="filterFiles()">
+
+        <div id="file-list">
+            <!-- 🎮 BulletStorm 2.0 (SpriteKit) -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Assets%20For%20Projects/BulletStorm%202.0%20(SpriteKit).zip" class="download-btn" download>
+                    📥 BulletStorm 2.0 (SpriteKit) Assets (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('bulletstorm-video')">📺 Watch Tutorial</button>
+                <div id="bulletstorm-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/r5jnzfc9zBM?si=LivClsnXgNNRRS_U" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 🎵 SoundEffects Samples -->
+<div class="project">
+    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Assets%20For%20Projects/SoundEffects%20Samples.zip" class="download-btn" download>
+        📥 Sound Effects & Music Samples (.zip)
+    </a>
+    <button class="toggle-video" onclick="toggleVideo('soundeffects-video')">📺 Watch Tutorial</button>
+    <div id="soundeffects-video" class="video-container">
+        <iframe src="https://www.youtube.com/embed/qjugxzYfkHQ?si=ob9OaPg-QiHpc7gm" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+            <!-- 🖼️ Pictures - UIKit Scroll Example -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Assets%20For%20Projects/Pictures%20-%20UIKit%20Scroll%20Example.zip" class="download-btn" download>
+                    📥 Pictures - UIKit Scroll Example (.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('scroll-images-video')">📺 Watch Tutorial</button>
+                <div id="scroll-images-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Created by NDCSwift | Swift Enthusiast</footer>
+
+    <!-- 🔍 Search & Video Toggle Script -->
+    <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list .project");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+
+        function toggleVideo(videoId) {
+            let videoDiv = document.getElementById(videoId);
+            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
