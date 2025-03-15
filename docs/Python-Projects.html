@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>🐍 Python Projects</header>
+
+    <nav>
+        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
+        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
+        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
+        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
+        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
+        <a href="Python-Projects.html">🐍 Python Projects</a>
+        <a href="Assets.html">📂 Project Assets</a>
+        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
+    </nav>
+
+    <div class="container">
+        <h1>📂 Python Projects</h1>
+        <p>Click below to download Python scripts used in my tutorials:</p>
+
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+
+        <div id="file-list">
+            <!-- 🎲 Guessing Game -->
+            <div class="project">
+                <a href="https://github.com/NDCSwift/Python-Projects/raw/main/GuessingGame.py.zip" class="download-btn" download>
+                    📥 Guessing Game (.py.zip)
+                </a>
+                <button class="toggle-video" onclick="toggleVideo('guessinggame-video')">📺 Watch Tutorial</button>
+                <div id="guessinggame-video" class="video-container">
+                    <iframe src="https://www.youtube.com/embed/9UbUaadd7d0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Created by NDCSwift | Swift & Python Enthusiast</footer>
+
+    <!-- 🔍 Search & Video Toggle Script -->
+    <script>
+        function filterFiles() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let files = document.querySelectorAll("#file-list .project");
+
+            files.forEach(file => {
+                let text = file.textContent.toLowerCase();
+                file.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+
+        function toggleVideo(videoId) {
+            let videoDiv = document.getElementById(videoId);
+            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
