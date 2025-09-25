@@ -6,7 +6,7 @@
     <meta name="description" content="WordSage: Your Daily Word Challenge. Learn new words and improve your vocabulary with fun daily challenges!">
     <title>Noah Carpenter's iOS Apps</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
     <style>
     :root {
         --primary: #4f46e5;
@@ -235,21 +235,55 @@
         border-radius: var(--radius);
         box-shadow: var(--shadow);
     }
+    .about-section {
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: var(--bg-dark);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        color: var(--text-secondary);
+    }
+    .skills-section {
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: var(--bg-dark);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        color: var(--text-secondary);
+    }
+    .quick-info {
+        background-color: #e0e7ff;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: #3730a3;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
     </style>
 </head>
 <body class="landing-page">
     <header>
+        <p>Noah Carpenter — iOS Developer & Designer</p>
         <h1>Explore My iOS Apps</h1>
         <nav>
             <ul>
                 <li><a href="#wordsage">WordSage</a></li>
                 <li><a href="#dailydevotion">Daily Devotion</a></li>
                 <li><a href="#tapduel">Tap Duel</a></li>
-                <li><a href="https://apps.apple.com/ca/app/wordsage/id6683296823" target="_blank">Download WordSage</a></li>
             </ul>
         </nav>
         <p>Discover my personal collection of iOS apps—designed to inspire, educate, and uplift.</p>
     </header>
+
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm Noah Carpenter, a passionate iOS developer and designer dedicated to creating engaging and intuitive mobile experiences. With a focus on clean design and robust functionality, I strive to build apps that users love and find valuable.</p>
+    </section>
 
     <h2>My Apps</h2>
 
@@ -259,6 +293,11 @@
             <div class="app-layout">
               <div class="app-text">
                 <p><strong>WordSage</strong> is your daily companion for growing your vocabulary through interactive challenges and smart game modes designed to sharpen your language skills.</p>
+                <div class="quick-info">
+                  <span>Role: Developer & Designer</span>
+                  <span>Tech: Swift, Xcode, UIKit/SwiftUI</span>
+                  <span>Year: 2024</span>
+                </div>
                 <ul>
                   <li>Daily word challenges to test your skills</li>
                   <li>Use new words in real sentences</li>
@@ -281,6 +320,11 @@
             <div class="app-layout">
               <div class="app-text">
                 <p><strong>Daily Devotion</strong> brings spiritual insight to your fingertips, featuring beautifully curated scripture and thoughtful reflections to start each day with purpose.</p>
+                <div class="quick-info">
+                  <span>Role: Developer & Designer</span>
+                  <span>Tech: Swift, Xcode, SwiftUI</span>
+                  <span>Year: 2025</span>
+                </div>
                 <ul>
                   <li>Handpicked verses + inspiring reflections</li>
                   <li>Choose from KJV, ASV, WEB, or DRB</li>
@@ -302,6 +346,11 @@
             <div class="app-layout">
                 <div class="app-text">
                     <p><strong>Tap Duel</strong> is the ultimate test of reflexes. Play face-to-face on one device, online via Game Center, or solo to sharpen your reaction time. Perfect for quick bursts of competitive fun!</p>
+                    <div class="quick-info">
+                      <span>Role: Developer & Designer</span>
+                      <span>Tech: Swift, Xcode, SwiftUI, RevenueCat, GameKit</span>
+                      <span>Year: 2025</span>
+                    </div>
                     <ul>
                         <li>Real-Time Online Multiplayer – Face off against friends or global opponents using Game Center.</li>
                         <li>Local Two-Player Mode – Play head-to-head on the same device—perfect for quick showdowns.</li>
@@ -322,8 +371,13 @@
         </div>
     </section>
 
+    <section class="skills-section">
+        <h2>Skills &amp; Tools</h2>
+        <p>Proficient in Swift, Xcode, UIKit, SwiftUI, and Game Center integration. Experienced with designing intuitive user interfaces, motion-based controls, and implementing real-time multiplayer features. Passionate about clean code, user experience, and continuous learning.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Noah Carpenter. All Rights Reserved.</p>
+        <p>&copy; 2025 Noah Carpenter. All Rights Reserved.</p>
         <a href="Privacy-policy.html">Privacy Policy</a>
         <div class="social-media">
 
