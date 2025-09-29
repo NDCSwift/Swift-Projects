@@ -7,162 +7,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>🎨 UIKit Projects</header>
-
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">🎨 UIKit Projects</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="Xcode-Projects.html">🚀 Xcode</a>
+            <a href="SwiftUI-Projects.html">📱 SwiftUI</a>
+            <a href="UIKit-Projects.html">🎨 UIKit</a>
+            <a href="Playgrounds.html">🎮 Playgrounds</a>
+            <a href="Developer-Tutorials.html">💻 Dev Tutorials</a>
+            <a href="Python-Projects.html">🐍 Python</a>
+            <a href="Assets.html">📂 Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+        </nav>
+    </header>
 
     <div class="container">
-        <h1>📂 UIKit Projects</h1>
-        <p>Click below to download the UIKit project files:</p>
+        <h1>🎨 UIKit Projects</h1>
+        <p>Browse UIKit projects below — each includes a tutorial and GitHub repository:</p>
 
         <!-- 🔍 Search Bar -->
         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
-        
+
         <div id="file-list">
-            <!-- UIKit Demo -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/uiKitDemo.zip" class="download-btn" download>
-                    📥 UIKit Demo (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('uikit-demo-video')">📺 Watch Tutorial</button>
-                <div id="uikit-demo-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/CU04v-sUhhg" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>Working with View Controllers | Swift UIKit | Xcode Tutorial</h2>
+                <a href="https://youtu.be/iDqtHtwtjbQ" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitViewControllers" target="_blank">📂 View Repository</a>
             </div>
 
-            <!-- Auto Layout Example -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/AutoLayoutExample.zip" class="download-btn" download>
-                    📥 Auto Layout Example (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('autolayout-video')">📺 Watch Tutorial</button>
-                <div id="autolayout-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/o_7H9773Iy8" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>Auto Layout | Swift UIKit | Xcode Tutorial</h2>
+                <a href="https://youtu.be/o_7H9773Iy8" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitAutoLayoutDemo" target="_blank">📂 View Repository</a>
             </div>
 
-            <!-- Collections (No video tutorial available) -->
-            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/Collections.zip" class="download-btn" download>
-                📥 Collections (.zip)
-            </a>
-
-            <!-- MapKit Demo -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/MapKitDemoUIKit.zip" class="download-btn" download>
-                    📥 MapKit Demo UIKit (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('mapkit-video')">📺 Watch Tutorial</button>
-                <div id="mapkit-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/txsX27k8J6M" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>TableView &amp; CollectionView | Swift UIKit | Xcode Tutorial</h2>
+                <a href="https://youtu.be/HQsSiBP-Z1g" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitTableViewCollectionViewDemo" target="_blank">📂 View Repository</a>
             </div>
 
-            <!-- UIKit Push & TabView: The Ultimate Navigation Guide -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/UiKitNavigation.zip" class="download-btn" download>
-        📥 UIKit Navigation (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('uikit-navigation-video')">📺 Watch Tutorial</button>
-    <div id="uikit-navigation-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/B16hgvOzTEE" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-            <!-- Scroll Test UIKit Example -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/ScrollTestUIKitExample.zip" class="download-btn" download>
-        📥 Scroll Test UIKit Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('scrolltest-video')">📺 Watch Tutorial</button>
-    <div id="scrolltest-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/gpAWl-if3aw" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 🎨 Custom UI Elements Example -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/CustomUIElementsExample.zip" class="download-btn" download>
-        📥 Custom UI Elements Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('custom-ui-video')">📺 Watch Tutorial</button>
-    <div id="custom-ui-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/VjX2SHVoJ14" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 🎬 UIKit Animations Example -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/UIKitAnimationsExample.zip" class="download-btn" download>
-        📥 UIKit Animations Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('uikit-animations-video')">📺 Watch Tutorial</button>
-    <div id="uikit-animations-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/ABb5DzykuGc" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 🌐 UIKit Networking Example -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/UIKitNetworkingExample.zip" class="download-btn" download>
-        📥 UIKit Networking Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('uikit-networking-video')">📺 Watch Tutorial</button>
-    <div id="uikit-networking-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/fRVb9hTM9bM" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-            <!-- Notifications Example (No video tutorial available) -->
-            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NotificationsExample.zip" class="download-btn" download>
-                📥 Notifications Example (.zip)
-            </a>
-
-            <!-- Segue Examples (No video tutorial available) -->
-            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/SegueExamples.zip" class="download-btn" download>
-                📥 Segue Examples (.zip)
-            </a>
-
-            <!-- Note Taking App -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/NoteTakingApp.zip" class="download-btn" download>
-                    📥 Note Taking App (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('notetaking-video')">📺 Watch Tutorial</button>
-                <div id="notetaking-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/-K0Vk1-U4sA" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>Integrating MapKit with UIKit | Swift UIKit | Xcode Tutorial</h2>
+                <a href="https://youtu.be/txsX27k8J6M" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitMapKitDemo" target="_blank">📂 View Repository</a>
             </div>
 
-            <!-- Table View & Collection View Demo -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/TableViewCollectionViewDemo.zip" class="download-btn" download>
-                    📥 Table View & Collection View Demo (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('tableview-video')">📺 Watch Tutorial</button>
-                <div id="tableview-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HQsSiBP-Z1g" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>CoreData Creating a Notes App | Swift UIKit | Xcode Tutorial</h2>
+                <a href="https://youtu.be/-K0Vk1-U4sA" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitCoreDataNoteTakingApp" target="_blank">📂 View Repository</a>
             </div>
 
-            <!-- View Controller Examples Noah C (No video tutorial available) -->
-            <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/UIKit-Projects/ViewControllerExamplesNoahC.zip" class="download-btn" download>
-                📥 View Controller Examples Noah C (.zip)
-            </a>
+            <div class="project">
+                <h2>UIKit ScrollView Masterclass: Vertical &amp; Horizontal Scrolling!</h2>
+                <a href="https://youtu.be/gpAWl-if3aw" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitScrolling" target="_blank">📂 View Repository</a>
+            </div>
+
+            <div class="project">
+                <h2>Level Up Your UIKit Skills: Build a Reusable UI Library</h2>
+                <a href="https://youtu.be/VjX2SHVoJ14" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitCustomUIElementsExample" target="_blank">📂 View Repository</a>
+            </div>
+
+            <div class="project">
+                <h2>UIKit Animations: Beyond the Basics (Advanced Techniques)</h2>
+                <a href="https://youtu.be/ABb5DzykuGc" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitAnimationsExample" target="_blank">📂 View Repository</a>
+            </div>
+
+            <div class="project">
+                <h2>Networking in UIKit: Fetching and Displaying Data</h2>
+                <a href="https://youtu.be/fRVb9hTM9bM" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UIKitNetworkingExample" target="_blank">📂 View Repository</a>
+            </div>
+
+            <div class="project">
+                <h2>UIKit Push &amp; TabView: The Ultimate Guide</h2>
+                <a href="https://youtu.be/B16hgvOzTEE" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/UiKitNavigation" target="_blank">📂 View Repository</a>
+            </div>
         </div>
     </div>
 
-    <footer>Created by NDCSwift | Swift Enthusiast</footer>
+    <footer>
+        <p>Created by <strong>NDCSwift</strong> | Swift Enthusiast</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html">🔒 Privacy Policy</a>
+        </div>
+    </footer>
 
-    <!-- 🔍 Search & Video Toggle Script -->
+    <!-- 🔍 Search Script -->
     <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
@@ -172,11 +111,6 @@
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
-        }
-
-        function toggleVideo(videoId) {
-            let videoDiv = document.getElementById(videoId);
-            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>

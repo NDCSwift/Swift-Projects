@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>🎮 Swift Playgrounds</header>
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">🎮 Swift Playgrounds</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="Xcode-Projects.html">🚀 Xcode</a>
+            <a href="SwiftUI-Projects.html">📱 SwiftUI</a>
+            <a href="UIKit-Projects.html">🎨 UIKit</a>
+            <a href="Playgrounds.html">🎮 Playgrounds</a>
+            <a href="Developer-Tutorials.html">💻 Dev Tutorials</a>
+            <a href="Python-Projects.html">🐍 Python</a>
+            <a href="Assets.html">📂 Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+        </nav>
+    </header>
 
 
     <div class="container">
-        <h1>📂 Swift Playgrounds</h1>
-        <p>Click below to download the Swift Playground files:</p>
- <!-- 🔍 Search Bar -->
- <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
- <div id="file-list">
+        <h1>🎮 Swift Playgrounds</h1>
+        <p>Browse Swift Playground projects below — each includes a download link, and some include a tutorial video:</p>
+
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+
+        <div id="file-list">
      <!-- Arrays Playground -->
 <div class="project">
     <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Playgrounds/ArraysPlayground.playground.zip" class="download-btn" download>
@@ -326,16 +331,7 @@
     </div>
 </div>
 
-<!-- SiS - Easter Eggs in Swift Playground -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Playgrounds/SiS%20-%20Easter%20Eggs%20in%20Swift.playground.zip" class="download-btn" download>
-        📥 SiS - Easter Eggs in Swift Playground (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('sis-easter-video')">📺 Watch Tutorial</button>
-    <div id="sis-easter-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/iAVZzTUw3P8" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
+
 
 <!-- SiS - Enums Playground -->
 <div class="project">
@@ -462,12 +458,14 @@
             link.style.display = text.includes(input) ? "block" : "none";
         });
     }
-
-    function toggleVideo(videoId) {
-        let videoDiv = document.getElementById(videoId);
-        videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
-    }
-</script>
-    <footer>Created by NDCSwift | Swift Enthusiast</footer>
+  </script>
+    <footer>
+        <p>Created by <strong>NDCSwift</strong> | Swift Enthusiast</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html">🔒 Privacy Policy</a>
+        </div>
+    </footer>
 </body>
 </html>

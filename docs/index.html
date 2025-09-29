@@ -8,94 +8,107 @@
 </head>
 <body class="landing-page">
     <!-- 🚀 Header -->
-    <header>NDC Coding Resources</header>
-
-    <!-- 📍 Navigation -->
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">🚀 NDC Coding Resources</div>
+        <nav>
+            <a href="Xcode-Projects.html">Xcode</a>
+            <a href="SwiftUI-Projects.html">SwiftUI</a>
+            <a href="UIKit-Projects.html">UIKit</a>
+            <a href="Playgrounds.html">Playgrounds</a>
+            <a href="Developer-Tutorials.html">Dev Tutorials</a>
+            <a href="Python-Projects.html">Python</a>
+            <a href="Assets.html">Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">YouTube</a>
+        </nav>
+    </header>
 
     <!-- 🎉 Hero Section -->
-    <div class="hero">
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>📂 Welcome to NDC's Coding Resources</h1>
-            <p>Master Swift & Python with hands-on tutorials and downloadable templates.</p>
+            <h1 class="typing-text" data-text="📂 Learn. Build. Launch."></h1>
+            <p>Master Swift & Python with hands-on tutorials, real projects, and guided videos.</p>
+            <div class="social-cta">
+                <a href="https://github.com/NDCSwift" target="_blank" class="float-btn github">💻 Follow on GitHub</a>
+                <a href="https://www.youtube.com/@NoahDoesCoding97?sub_confirmation=1" target="_blank" class="float-btn youtube">🎥 Subscribe on YouTube</a>
+            </div>
             <div class="cta-container">
                 <a href="Xcode-Projects.html" class="cta-btn">🚀 Xcode Projects</a>
                 <a href="SwiftUI-Projects.html" class="cta-btn">📱 SwiftUI Projects</a>
                 <a href="UIKit-Projects.html" class="cta-btn">🎨 UIKit Projects</a>
-                <a href="Playgrounds.html" class="cta-btn">🎮 Swift Playgrounds</a>
-                <a href="Developer-Tutorials.html" class="cta-btn">💻 Developer Tutorials</a>
-                <a href="Python-Projects.html" class="cta-btn">🐍 Python Projects</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- 💡 Featured Section -->
-    <section class="features">
-        <h2>🚀 Start Learning & Building Today</h2>
-        <p class="subheading">
-            Download Swift & Python project templates and follow video tutorials to level up your coding skills.
-        </p>
-
-        <div class="feature-grid">
-            <!-- SwiftUI Projects -->
-            <div class="feature-card">
-                <h3>📂 SwiftUI Builds</h3>
-                <p>Explore SwiftUI builds with related videos, templates, and best practices.</p>
-                <a href="SwiftUI-Projects.html" class="feature-btn">📥 Browse Templates</a>
-            </div>
-
-            <!-- Hands-On Tutorials -->
-            <div class="feature-card">
-                <h3>🎥 Hands-On Tutorials</h3>
-                <p>Follow guided coding sessions and build projects step by step.</p>
-                
-                <!-- 🎬 Embedded SwiftUI YouTube Playlist -->
-                <div class="video-container">
-                    <iframe width="100%" height="250" 
-                            src="https://www.youtube.com/embed/videoseries?list=PLbeGXTt3IOd9-PMvAvpwTOXfV3T8h6jfM" 
-                            frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-            
-                <a href="https://www.youtube.com/playlist?list=PLbeGXTt3IOd9-PMvAvpwTOXfV3T8h6jfM" 
-                   target="_blank" class="feature-btn">📺 Watch on YouTube</a>
-            </div>
-
-            <!-- Python for Beginners -->
-            <div class="feature-card">
-                <h3>🐍 Learn Python Basics</h3>
-                <p>New to Python? Start coding with simple projects and tutorials.</p>
-                
-                <!-- 🎬 Embedded Python YouTube Playlist -->
-                <div class="video-container">
-                    <iframe width="100%" height="250" 
-                            src="https://www.youtube.com/embed/videoseries?list=PLbeGXTt3IOd9KpLQcElWbCESCx9S_CpIp" 
-                            frameborder="0" allowfullscreen>
-                    </iframe>
-                </div>
-
-                <a href="https://www.youtube.com/embed/videoseries?list=PLbeGXTt3IOd9KpLQcElWbCESCx9S_CpIp" 
-                   target="_blank" class="feature-btn">🐍 Watch Python Series</a>
+                <a href="Playgrounds.html" class="cta-btn">🎮 Playgrounds</a>
+                <a href="Developer-Tutorials.html" class="cta-btn">💻 Dev Tutorials</a>
+                <a href="Python-Projects.html" class="cta-btn">🐍 Python</a>
             </div>
         </div>
     </section>
 
-  
+    <!-- 💡 Featured Section -->
+    <section class="features">
+        <h2>🚀 Start Learning & Building Today</h2>
+        <p class="subheading">Follow tutorials, browse repositories, and level up your coding skills.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <h3>📂 SwiftUI Builds</h3>
+                <p>Explore SwiftUI builds with video guides and best practices.</p>
+                <a href="SwiftUI-Projects.html" class="feature-btn">Browse Projects</a>
+            </div>
+            <div class="feature-card reveal">
+                <h3>🎥 Hands-On Tutorials</h3>
+                <p>Follow guided coding sessions and build projects step by step.</p>
+                <a href="Developer-Tutorials.html" class="feature-btn">Dev Tutorials</a>
+            </div>
+            <div class="feature-card reveal">
+                <h3>🐍 Learn Python Basics</h3>
+                <p>Start coding with beginner-friendly Python projects and tutorials.</p>
+                <a href="Python-Projects.html" class="feature-btn">Get Started</a>
+            </div>
+        </div>
+    </section>
 
     <!-- 🔹 Footer -->
     <footer>
         <p>Created by <strong>NDCSwift</strong> | Swift & Python Enthusiast</p>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank" class="social-btn">🎥 Subscribe on YouTube</a>
-        <p><a href="Privacy-policy.html" target="_blank">🔒 Privacy Policy</a></p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html" target="_blank">🔒 Privacy Policy</a>
+        </div>
     </footer>
+<script>
+// Typing Effect
+document.addEventListener("DOMContentLoaded", () => {
+    const el = document.querySelector(".typing-text");
+    const text = el.getAttribute("data-text");
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+        }
+    }
+    type();
+});
+
+// Scroll Reveal
+const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("scroll", () => {
+    for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+});
+
+</script>
+
 </body>
 </html>

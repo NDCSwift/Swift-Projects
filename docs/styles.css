@@ -7,10 +7,11 @@
 }
 
 body {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f9f9fb, #eef1f6);
     color: #333;
     line-height: 1.6;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 /* 🔍 Search Bar (Fix for Project Pages) */
 #search {
@@ -29,15 +30,54 @@ body {
     font-style: italic;
 }
 
-/* 🏠 Header */
-header {
-    background: linear-gradient(135deg, #fa7343, #ff5733);
-    color: #fff;
-    padding: 2rem;
-    font-size: 2rem;
+/* 🏠 Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(44, 47, 54, 0.9);
+    padding: 1rem 2rem;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar .logo {
     font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #fa7343;
+    transition: width 0.3s;
+}
+
+.navbar nav a:hover::after {
+    width: 100%;
 }
 
 /* 📍 Navigation */
@@ -64,48 +104,40 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* 🔥 Landing Page Styles */
-.landing-page {
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-/* 🎉 Hero Section */
-.landing-page .hero {
-    background: url('https://source.unsplash.com/1600x900/?technology,code') center/cover no-repeat;
-    height: 60vh;
+/* 🔥 Hero Section */
+.hero {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
+    color: #fff;
     position: relative;
-    padding: 2rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-.landing-page .hero::before {
-    content: "";
+.hero-overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
 }
 
-.landing-page .hero-content {
+.hero-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    margin: auto;
+    animation: fadeInUp 1.2s ease-out;
 }
 
-.landing-page .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
 }
 
-.landing-page .hero p {
+.hero p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 /* 🚀 CTA Buttons */
@@ -113,91 +145,127 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 
 .cta-btn {
-    background: #ff5733;
-    color: white;
+    background: linear-gradient(135deg, #fa7343, #ff5733);
+    color: #fff;
     font-weight: 600;
-    padding: 12px 18px;
-    border-radius: 8px;
+    padding: 14px 22px;
+    border-radius: 30px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(255, 87, 51, 0.2);
-    display: inline-block;
-    min-width: 180px;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(250, 115, 67, 0.4);
+    min-width: 160px;
 }
 
 .cta-btn:hover {
-    background: #d9442d;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(250, 115, 67, 0.6);
+}
+
+/* 🌟 Social CTA Buttons */
+.social-cta {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-cta .float-btn {
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* GitHub button style */
+.social-cta .github {
+    background: linear-gradient(135deg, #24292e, #444c56);
+    color: #fff;
+}
+.social-cta .github:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(36,41,46,0.6);
+}
+
+/* YouTube button style */
+.social-cta .youtube {
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: #fff;
+}
+.social-cta .youtube:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(204,0,0,0.6);
 }
 
 /* 💡 Features Section */
 .features {
-    padding: 3rem 2rem;
-    background: #ffffff;
-    text-align: center;
+    padding: 4rem 2rem;
+    background: transparent;
 }
 
 .features h2 {
-    font-size: 2.2rem;
-    color: #ff5733;
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 1rem;
 }
 
 .subheading {
     font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #666;
+    margin-bottom: 3rem;
 }
 
 .feature-grid {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .feature-card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card h3 {
     font-size: 1.5rem;
-    color: #ff5733;
     margin-bottom: 10px;
+    color: #fa7343;
 }
 
 .feature-btn {
     display: inline-block;
-    background: #ff5733;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #fa7343, #ff5733);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 25px;
     text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.3s;
 }
 
 .feature-btn:hover {
-    background: #d9442d;
+    box-shadow: 0 4px 12px rgba(250, 115, 67, 0.5);
+    transform: translateY(-2px);
 }
 
 /* 🎬 Embedded Video Section */
@@ -212,14 +280,6 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.video-container {
-    max-width: 800px;
-    margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
 /* ✅ Project Page Styles */
 .container {
     max-width: 900px;
@@ -228,55 +288,107 @@ nav a:hover {
     text-align: left;
 }
 
-.download-btn {
-    display: block;
-    background: #29ABE2;
-    color: white;
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 8px;
+/* 📂 Project Blocks */
+.project {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.project a {
+    display: inline-block;
+    margin: 4px 0;
+    color: #2575fc;
+    font-weight: 600;
     text-decoration: none;
-    margin: 10px auto;
-    width: 90%;
-    text-align: center;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
-.download-btn:hover {
-    background: #FA7343;
-    transform: scale(1.05);
+.project a:hover {
+    color: #fa7343;
 }
 
-.toggle-video {
-    display: block;
-    background: #7353BA;
+/* 🦶 Footer */
+footer {
+    background: #2c2f36;
     color: white;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links a {
+    color: #fff;
     text-decoration: none;
-    margin: 5px auto;
-    width: 80%;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
 }
 
-.toggle-video:hover {
-    background: #29ABE2;
+footer .social-links a:hover {
+    background: #fa7343;
 }
 
-.video-container {
-    display: none;
-    margin-top: 10px;
-    text-align: center;
+/* 🎨 Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.video-container iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    border-radius: 8px;
+/* Animated Gradient Background */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg, #6a11cb, #2575fc, #fa7343, #ff5733);
+    background-size: 800% 800%;
+    animation: gradientShift 20s ease infinite;
+    z-index: 0;
+    opacity: 0.6;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Typing Effect */
+.typing-text {
+    border-right: 3px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blinkCaret 0.8s step-end infinite;
+}
+@keyframes blinkCaret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* 📱 Responsive Design */

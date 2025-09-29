@@ -7,233 +7,118 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>🐍 Python Projects</header>
-
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">🐍 Python Projects</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="Xcode-Projects.html">🚀 Xcode</a>
+            <a href="SwiftUI-Projects.html">📱 SwiftUI</a>
+            <a href="UIKit-Projects.html">🎨 UIKit</a>
+            <a href="Playgrounds.html">🎮 Playgrounds</a>
+            <a href="Developer-Tutorials.html">💻 Dev Tutorials</a>
+            <a href="Python-Projects.html">🐍 Python</a>
+            <a href="Assets.html">📂 Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+        </nav>
+    </header>
 
     <div class="container">
-        <h1>📂 Python Projects</h1>
-        <p>Click below to download Python scripts used in my tutorials:</p>
+        <h1>🐍 Python Projects</h1>
+        <p>Browse Python projects below — some include GitHub repos, others are provided as .zip downloads:</p>
 
         <!-- 🔍 Search Bar -->
         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
 
         <div id="file-list">
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/GuessingGame.py.zip" class="download-btn" download>
-                    📥 Guessing Game (.py.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('guessinggame-video')">📺 Watch Tutorial</button>
-                <div id="guessinggame-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/9UbUaadd7d0" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>📥 Guessing Game</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/GuessingGame.py.zip" target="_blank">📂 Download Project (.zip)</a>
             </div>
-     <!-- 🖩 Calculator App -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/CalculatorApp.py.zip" class="download-btn" download>
-        📥 Calculator App (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('calculatorapp-video')">📺 Watch Tutorial</button>
-    <div id="calculatorapp-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/yDokqgjMoa4" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/FernetExample.zip" class="download-btn" download>
-        📥 Fernet Encryption Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('fernet-video')">📺 Watch Tutorial</button>
-    <div id="fernet-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/6iwb8ynRM-A" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/PW_Checker.zip" class="download-btn" download>
-        📥 Password Checker (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('pwchecker-video')">📺 Watch Tutorial</button>
-    <div id="pwchecker-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/w17naVNEDFA" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 📜 Text Adventure Game -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/text_adventure.py.zip" class="download-btn" download>
-        📥 Text Adventure Game (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('textadventure-video')">📺 Watch Tutorial</button>
-    <div id="textadventure-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/DZedi2xeOK0" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 📂 Organize Folders Script -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/organize_folders.py.zip" class="download-btn" download>
-        📥 Organize Folders Script (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('organizefolders-video')">📺 Watch Tutorial</button>
-    <div id="organizefolders-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/phQAEsFzcCo" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 🌐 Web Scraper -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/web_scraper.py.zip" class="download-btn" download>
-        📥 Web Scraper (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('webscraper-video')">📺 Watch Tutorial</button>
-    <div id="webscraper-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/Jupbvv9WSnI" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 📊 Data Visualizer -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/Data_Visualizer.py.zip" class="download-btn" download>
-        📥 Data Visualizer (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('datavisualizer-video')">📺 Watch Tutorial</button>
-    <div id="datavisualizer-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/uHhTo4WDSNI" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-<!-- Intermediate Python – Master Object-Oriented Programming (OOP) -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/rpgGame.py.zip" class="download-btn" download>
-        📥 RPG Game - OOP Python (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('rpg-python-video')">📺 Watch Tutorial</button>
-    <div id="rpg-python-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/mYX5mO2KMkQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<!-- 🐱 Cat Facts API Project -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/CatFactsAPI.py.zip" class="download-btn" download>
-        📥 Cat Facts API (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('catfacts-video')">📺 Watch Tutorial</button>
-    <div id="catfacts-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/mFkgcv7WeJc" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/APIKey_Example.py.zip" class="download-btn" download>
-        📥 API Key Example (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('apikey-video')">📺 Watch Tutorial</button>
-    <div id="apikey-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/NjhrUHBg8rM" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/DataAnalysisCSV.py.zip" class="download-btn" download>
-        📥 Data Analysis with CSV (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('csvanalysis-video')">📺 Watch Tutorial</button>
-    <div id="csvanalysis-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/jTTPmjtAY7o" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/JSON_Example.zip" class="download-btn" download>
-        📥 JSON Example (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('jsonexample-video')">📺 Watch Tutorial</button>
-    <div id="jsonexample-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/y5GDn31fUh8" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackEnd1_app.py.zip" class="download-btn" download>
-        📥 Python Backend #1 – Setup Flask App (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend1-video')">📺 Watch Tutorial</button>
-    <div id="python-backend1-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/2GGwz8zUy2M" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackEnd2_app.py.zip" class="download-btn" download>
-        📥 Python Backend #2 – API Requests & POST Methods (.py.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend2-video')">📺 Watch Tutorial</button>
-    <div id="python-backend2-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/KIH8GZ1wHr4" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackend3.zip" class="download-btn" download>
-        📥 Python Backend #3 – Connect Flask to a Database (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend3-video')">📺 Watch Tutorial</button>
-    <div id="python-backend3-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/UqH77WhRLH0" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_4.zip" class="download-btn" download>
-        📥 Python Backend #4 – Add Basic Auth to Your API (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend4-video')">📺 Watch Tutorial</button>
-    <div id="python-backend4-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/NRN2DFpViYc" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_5.zip" class="download-btn" download>
-        📥 Python Backend #5 – Deploy Your Flask App (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend5-video')">📺 Watch Tutorial</button>
-    <div id="python-backend5-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/hLmehRbgl1g" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_6%20FINALE.zip" class="download-btn" download>
-        📥 Python Backend #6 – Final Features & Wrap-Up (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('python-backend6-video')">📺 Watch Tutorial</button>
-    <div id="python-backend6-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/f7ZGknAUeVg" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
-
-
-
-
+            <div class="project">
+                <h2>📥 Calculator App</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/CalculatorApp.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Fernet Encryption Example</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/FernetExample.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Password Checker</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/PW_Checker.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Text Adventure Game</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/text_adventure.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Organize Folders Script</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/organize_folders.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Web Scraper</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/web_scraper.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Data Visualizer</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/Data_Visualizer.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 RPG Game - OOP Python</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/rpgGame.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Cat Facts API</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Python-Projects/CatFactsAPI.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 API Key Example</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/APIKey_Example.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Data Analysis with CSV</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/DataAnalysisCSV.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 JSON Example</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/JSON_Example.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #1 – Setup Flask App</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackEnd1_app.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #2 – API Requests & POST Methods</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackEnd2_app.py.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #3 – Connect Flask to a Database</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackend3.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #4 – Add Basic Auth to Your API</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_4.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #5 – Deploy Your Flask App</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_5.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
+            <div class="project">
+                <h2>📥 Python Backend #6 – Final Features & Wrap-Up</h2>
+                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Python-Projects/PythonBackedExample_6%20FINALE.zip" target="_blank">📂 Download Project (.zip)</a>
+            </div>
         </div>
     </div>
 
-    <footer>Created by NDCSwift | Swift & Python Enthusiast</footer>
+    <footer>
+        <p>Created by <strong>NDCSwift</strong> | Swift & Python Enthusiast</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html">🔒 Privacy Policy</a>
+        </div>
+    </footer>
 
-    <!-- 🔍 Search & Video Toggle Script -->
+    <!-- 🔍 Search Script -->
     <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
@@ -243,11 +128,6 @@
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
-        }
-
-        function toggleVideo(videoId) {
-            let videoDiv = document.getElementById(videoId);
-            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>

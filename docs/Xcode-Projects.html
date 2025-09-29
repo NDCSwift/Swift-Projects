@@ -7,105 +7,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>🚀 Xcode Projects</header>
-
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">🚀 Xcode Projects</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="Xcode-Projects.html">🚀 Xcode</a>
+            <a href="SwiftUI-Projects.html">📱 SwiftUI</a>
+            <a href="UIKit-Projects.html">🎨 UIKit</a>
+            <a href="Playgrounds.html">🎮 Playgrounds</a>
+            <a href="Developer-Tutorials.html">💻 Dev Tutorials</a>
+            <a href="Python-Projects.html">🐍 Python</a>
+            <a href="Assets.html">📂 Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+        </nav>
+    </header>
 
     <div class="container">
-        <h1>📂 Xcode Projects</h1>
-        <p>Click below to download the project files:</p>
+        <h1>🚀 Xcode Projects</h1>
+        <p>Browse Xcode projects below — each includes a tutorial and GitHub repository:</p>
 
         <!-- 🔍 Search Bar -->
         <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
 
-
-        <!-- 🛠️ Xcode Features -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/xcodefeatures.zip" class="download-btn" download>
-        📥 Xcode Features (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('xcodefeatures-video')">📺 Watch Tutorial</button>
-    <div id="xcodefeatures-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/p_6cInZ9Wmg" frameborder="0" allowfullscreen></iframe>
-    </div>
+        <div id="file-list">
+            <div class="project">
+    <h2>Master Xcode Documentation! Tips for Debugging, Learning, and Efficiency | Xcode 16+</h2>
+    <a href="https://youtu.be/hL1HCQNMsjY" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/DocumentationHelper.swiftpm" target="_blank">📂 View Repository</a>
 </div>
 
-        <div id="file-list">
-            <!-- 🔽 Xcode Project 1 -->
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/DocumentationHelper.swiftpm.zip" class="download-btn" download>
-                    📥 Documentation Helper (.swiftpm)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('documentation-video')">📺 Watch Tutorial</button>
-                <div id="documentation-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/hL1HCQNMsjY" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Xcode Productivity Hacks: Customize Your Workspace for Faster iOS Development</h2>
+    <a href="https://youtu.be/p_6cInZ9Wmg" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/XcodeFeatures_Sample" target="_blank">📂 View Repository</a>
+</div>
 
-            <!-- 🔽 Xcode Project 2 -->
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/XcodeTips.swiftpm.zip" class="download-btn" download>
-                    📥 Xcode Tips (.swiftpm)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('xcode-tips-video')">📺 Watch Tutorial</button>
-                <div id="xcode-tips-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/RmASegYddPM" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Xcode Debugging for Beginners: Learn Swift Debugging Tools!</h2>
+    <a href="https://youtu.be/dNq0j0zfjgs" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/XcodeDebuggingTemplate" target="_blank">📂 View Repository</a>
+</div>
 
-            <!-- 🔽 Xcode Project 3 -->
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/LaunchScreenExample.zip" class="download-btn" download>
-                    📥 Launch Screen Example (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('launchscreen-video')">📺 Watch Tutorial</button>
-                <div id="launchscreen-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/258xklh5sVk" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Can You Code an App With Just Your Voice?</h2>
+    <a href="https://youtu.be/G0gkQE6-ZA0" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/VoiceTimer-App-Challenge" target="_blank">📂 View Repository</a>
+</div>
 
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Xcode-Projects/XcodeDebuggingTemplate.zip" class="download-btn" download>
-                    📥 Xcode Debugging Template (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('xcode-debugging-video')">📺 Watch Tutorial</button>
-                <div id="xcode-debugging-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/dNq0j0zfjgs" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Swift Package Manager (SPM) Tutorial 2025 – Add, Create &amp; Remove Swift Packages</h2>
+    <a href="https://youtu.be/2Q-iM1MXIbs" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/UtilitiesKit1" target="_blank">📂 View Repository</a><br>
+    <a href="https://github.com/NDCSwift/SwiftPackageManagerDemo" target="_blank">📂 View Repository</a>
+</div>
 
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Xcode-Projects/XcodeOrientation.zip" class="download-btn" download>
-                    📥 Xcode Orientation (SwiftUI + UIKit) (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('xcode-orientation-video')">📺 Watch Tutorial</button>
-                <div id="xcode-orientation-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/1WM_o2k6o10" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Add Custom Fonts to Your iOS App (Xcode + SwiftUI + UIKit Tutorial)</h2>
+    <a href="https://youtu.be/vlEwofsY_2w" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/SwiftUICustomFont" target="_blank">📂 View Repository</a>
+</div>
 
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/refs/heads/main/Xcode-Projects/XcodeCustomFonts.zip" class="download-btn" download>
-                    📥 Xcode Custom Fonts (SwiftUI + UIKit) (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('xcode-customfonts-video')">📺 Watch Tutorial</button>
-                <div id="xcode-customfonts-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/vlEwofsY_2w" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<div class="project">
+    <h2>Mastering the SwiftUI View Library: Build a Stunning UI for iOS Easily</h2>
+    <a href="https://youtu.be/pHbUhDtK6Kk" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/SwitUIViewLibraryEx" target="_blank">📂 View Repository</a>
+</div>
+
+<div class="project">
+    <h2>You Won't Believe How Easy SwiftUI Launch Screens Can Be</h2>
+    <a href="https://youtu.be/258xklh5sVk" target="_blank">📺 Watch on YouTube</a><br>
+    <a href="https://github.com/NDCSwift/LaunchScreenExamples" target="_blank">📂 View Repository</a>
+</div>
         </div>
     </div>
 
-    <footer>Created by NDCSwift | Swift Enthusiast</footer>
+    <footer>
+        <p>Created by <strong>NDCSwift</strong> | Swift Enthusiast</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html">🔒 Privacy Policy</a>
+        </div>
+    </footer>
 
     <!-- 🔍 Search & Video Toggle Script -->
     <script>
@@ -117,11 +100,6 @@
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
-        }
-
-        function toggleVideo(videoId) {
-            let videoDiv = document.getElementById(videoId);
-            videoDiv.style.display = (videoDiv.style.display === "none" || videoDiv.style.display === "") ? "block" : "none";
         }
     </script>
 </body>

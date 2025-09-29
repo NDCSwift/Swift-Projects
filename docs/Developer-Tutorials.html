@@ -7,143 +7,98 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>💻 Developer Tutorials</header>
-
-    <nav>
-        <a href="Xcode-Projects.html">🚀 Xcode Projects</a>
-        <a href="SwiftUI-Projects.html">📱 SwiftUI Projects</a>
-        <a href="UIKit-Projects.html">🎨 UIKit Projects</a>
-        <a href="Playgrounds.html">🎮 Swift Playgrounds</a>
-        <a href="Developer-Tutorials.html">💻 Developer Tutorials</a>
-        <a href="Python-Projects.html">🐍 Python Projects</a>
-        <a href="Assets.html">📂 Project Assets</a>
-        <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 My YouTube</a>
-    </nav>
+    <header class="navbar">
+        <div class="logo">💻 Developer Tutorials</div>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="Xcode-Projects.html">🚀 Xcode</a>
+            <a href="SwiftUI-Projects.html">📱 SwiftUI</a>
+            <a href="UIKit-Projects.html">🎨 UIKit</a>
+            <a href="Playgrounds.html">🎮 Playgrounds</a>
+            <a href="Developer-Tutorials.html">💻 Dev Tutorials</a>
+            <a href="Python-Projects.html">🐍 Python</a>
+            <a href="Assets.html">📂 Assets</a>
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+        </nav>
+    </header>
 
     <div class="container">
-        <h1>📂 Developer Tutorials</h1>
-        <p>Click below to download the tutorial project files:</p>
+        <h1>💻 Developer Tutorials</h1>
+        <p>Browse coding tutorials below — each includes a YouTube video and some include repositories:</p>
 
         <!-- 🔍 Search Bar -->
-        <input type="text" id="search" placeholder="🔍 Search for a project..." onkeyup="filterFiles()">
+        <input type="text" id="search" placeholder="🔍 Search for a tutorial..." onkeyup="filterFiles()">
 
         <div id="file-list">
-            <!-- 🔽 Developer Projects with Expandable Videos -->
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Birthdays.zip" class="download-btn" download>
-                    📥 Birthdays (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('birthdays-video')">📺 Watch Tutorial</button>
-                <div id="birthdays-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/yyE4Vlc4tpQ" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Tutorial For Beginners | Learn Xcode &amp; iOS app design (2025)</h2>
+                <a href="https://youtu.be/_utOlpGlhes" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/SwiftUIChatPrototype" target="_blank">📂 View Repository</a><br>
+                <a href="https://github.com/NDCSwift/SwiftUIWeatherForecast" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/WeatherForecast.zip" class="download-btn" download>
-                    📥 Weather Forecast (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('weather-video')">📺 Watch Tutorial</button>
-                <div id="weather-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/_utOlpGlhes" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Tutorial for Beginners (Part 2) | Design an Interface | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/XV423QnB4dQ" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/SwiftUIOnboardingFlow" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/OnboardingFlow.zip" class="download-btn" download>
-                    📥 Onboarding Flow (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('onboarding-video')">📺 Watch Tutorial</button>
-                <div id="onboarding-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/XV423QnB4dQ" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Tutorial for Beginners (Part 3) | Buttons and State | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/IBol0DAqBGA" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/SwiftUIDiceRollerExample" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ScoreKeeper2.zip" class="download-btn" download>
-                    📥 ScoreKeeper (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('scorekeeper-video')">📺 Watch Tutorial</button>
-                <div id="scorekeeper-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/E_vqv2JknW0" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Tutorial for Beginners (Part 4) | Lists and Text Fields | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/StNH6RNxm90" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/Pick-a-pal" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/ChatPrototype.zip" class="download-btn" download>
-                    📥 Chat Prototype (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('chat-video')">📺 Watch Tutorial</button>
-                <div id="chat-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/_utOlpGlhes" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Intermediate Tutorial | Data Modeling | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/E_vqv2JknW0" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/ScoreKeeper" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Pick-a-pal.zip" class="download-btn" download>
-                    📥 Pick-A-Pal (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('pickapal-video')">📺 Watch Tutorial</button>
-                <div id="pickapal-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/StNH6RNxm90" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Intermediate Tutorial (Part 2) | Models and persistence | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/yyE4Vlc4tpQ" target="_blank">📺 Watch on YouTube</a><br>
+                <a href="https://github.com/NDCSwift/SwiftUIBirthdays" target="_blank">📂 View Repository</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/DiceRollerExample.zip" class="download-btn" download>
-                    📥 Dice Roller Example (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('dice-video')">📺 Watch Tutorial</button>
-                <div id="dice-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/IBol0DAqBGA" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/FriendsFavoriteMovies_PartOne.zip" class="download-btn" download>
-                    📥 Friends Favorite Movies – Part One (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('movies-part1-video')">📺 Watch Tutorial</button>
-                <div id="movies-part1-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/WkAsGhhGcVY" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/FriendsFavoriteMovies_PartTwo.zip" class="download-btn" download>
-                    📥 Friends Favorite Movies – Part Two (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('movies-part2-video')">📺 Watch Tutorial</button>
-                <div id="movies-part2-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/xn7IgLol0JU" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Dev Tutorial #7: Navigation, editing, and relationships | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/WkAsGhhGcVY" target="_blank">📺 Watch on YouTube</a>
             </div>
 
             <div class="project">
-                <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/FriendsFavoriteMovies_PartThree.zip" class="download-btn" download>
-                    📥 Friends Favorite Movies – Part Three (.zip)
-                </a>
-                <button class="toggle-video" onclick="toggleVideo('movies-part3-video')">📺 Watch Tutorial</button>
-                <div id="movies-part3-video" class="video-container">
-                    <iframe src="https://www.youtube.com/embed/0GT7gBOQUHA" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <h2>SwiftUI Dev Tutorial #8: Create Update and delete data | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/xn7IgLol0JU" target="_blank">📺 Watch on YouTube</a>
             </div>
-            <!-- 🅰️ Alphabetizer Complete -->
-<div class="project">
-    <a href="https://github.com/NDCSwift/Swift-Projects/raw/main/Developer-Tutorials/Alphabetizer-Complete.zip" class="download-btn" download>
-        📥 Alphabetizer Complete (.zip)
-    </a>
-    <button class="toggle-video" onclick="toggleVideo('alphabetizer-video')">📺 Watch Tutorial</button>
-    <div id="alphabetizer-video" class="video-container">
-        <iframe src="https://www.youtube.com/embed/0fT5As_K6qw" frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
 
+            <div class="project">
+                <h2>SwiftUI Dev Tutorial #9: Work with Relationships | Learn Xcode (2025)</h2>
+                <a href="https://youtu.be/0GT7gBOQUHA" target="_blank">📺 Watch on YouTube</a>
+            </div>
 
+            <div class="project">
+                <h2>SwiftUI Dev Tutorial #10: Complete a game with logic</h2>
+                <a href="https://youtu.be/0fT5As_K6qw" target="_blank">📺 Watch on YouTube</a>
+            </div>
         </div>
     </div>
 
-    <footer>Created by NDCSwift | Swift Enthusiast</footer>
+    <footer>
+        <p>Created by <strong>NDCSwift</strong> | Swift Enthusiast</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@NoahDoesCoding97" target="_blank">🎥 YouTube</a>
+            <a href="https://github.com/NDCSwift" target="_blank">💻 GitHub</a>
+            <a href="Privacy-policy.html">🔒 Privacy Policy</a>
+        </div>
+    </footer>
 
-    <!-- 🔍 Search & Video Toggle Script -->
+    <!-- 🔍 Search Script -->
     <script>
         function filterFiles() {
             let input = document.getElementById("search").value.toLowerCase();
@@ -153,15 +108,6 @@
                 let text = file.textContent.toLowerCase();
                 file.style.display = text.includes(input) ? "" : "none";
             });
-        }
-
-        function toggleVideo(videoId) {
-            let videoDiv = document.getElementById(videoId);
-            if (videoDiv.style.display === "none" || videoDiv.style.display === "") {
-                videoDiv.style.display = "block";
-            } else {
-                videoDiv.style.display = "none";
-            }
         }
     </script>
 </body>
